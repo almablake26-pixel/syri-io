@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Syri (SYRI) — Signals</title>
+  <meta name="description" content="Syri (SYRI) — official signals, verification links, and anti-scam guidance." />
+  <style>
+    :root{--bg:#0b1020;--fg:#e8eefc;--muted:#aab6d6;--card:#121a33;--accent:#77a7ff;}
+    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; background:var(--bg); color:var(--fg);}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:860px;margin:0 auto;padding:32px 18px}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:18px 18px;margin:14px 0}
+    code{background:rgba(255,255,255,.08);padding:2px 6px;border-radius:8px}
+    .muted{color:var(--muted)}
+    h1{margin:0 0 8px 0;font-size:28px}
+    h2{margin:0 0 10px 0;font-size:18px}
+    ul{margin:10px 0 0 18px}
+    .grid{display:grid;grid-template-columns:1fr;gap:12px}
+    @media(min-width:820px){.grid{grid-template-columns:1fr 1fr}}
+    .label{font-weight:600}
+    .small{font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Syri (SYRI)</h1>
+      <div class="muted">Clear signal only. Verify everything. We never DM first.</div>
+    </header>
+
+    <div class="card">
+      <h2>Official links</h2>
+      <ul>
+        <li><span class="label">Website:</span> <a href="https://syri.io">syri.io</a></li>
+        <li><span class="label">X/Twitter:</span> <span class="muted">TBD</span></li>
+        <li><span class="label">Telegram/Discord:</span> <span class="muted">TBD</span></li>
+        <li><span class="label">Docs:</span> <span class="muted">TBD</span></li>
+      </ul>
+      <div class="small muted" style="margin-top:10px">Only trust links posted on this page. If it’s not here, it’s not official.</div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h2>Token facts (fill after mint)</h2>
+        <ul>
+          <li><span class="label">Chain:</span> Solana</li>
+          <li><span class="label">Name / ticker:</span> Syri / SYRI</li>
+          <li><span class="label">Mint (CA):</span> <code>PASTE_FULL_MINT_ADDRESS</code></li>
+          <li><span class="label">Decimals / Supply:</span> <code>9</code> / <code>1,000,000,000</code> (planned)</li>
+          <li><span class="label">Team allocation:</span> <code>0%</code></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Liquidity (planned)</h2>
+        <ul>
+          <li><span class="label">DEX / pair:</span> Raydium / SOL</li>
+          <li><span class="label">Initial LP:</span> ~ $2,000 TVL (planned)</li>
+          <li><span class="label">LP policy:</span> lock 80% for 12 months; 20% in 2-of-3 multisig (emergency/migration only)</li>
+          <li><span class="label">Add-liquidity tx:</span> <span class="muted">TBD</span></li>
+          <li><span class="label">LP lock proof:</span> <span class="muted">TBD</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Authority proofs (fill after mint)</h2>
+      <ul>
+        <li><span class="label">Mint authority:</span> Revoked — <span class="muted">proof link TBD</span></li>
+        <li><span class="label">Freeze authority:</span> Revoked — <span class="muted">proof link TBD</span></li>
+        <li><span class="label">Metadata update authority:</span> Revoked or multisig — <span class="muted">proof link TBD</span></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Verify (anti-scam)</h2>
+      <ul>
+        <li>We will never DM you first. Mods will never ask for your seed phrase.</li>
+        <li>Only trust the mint address shown above (full, no truncation).</li>
+        <li>Beware fake “migration / v2 / airdrop claim / support” links.</li>
+        <li>Incident page: <a href="/incident/">syri.io/incident</a></li>
+      </ul>
+      <div class="small muted" style="margin-top:10px">Not financial advice. No promises of returns. High risk.</div>
+    </div>
+
+    <footer class="muted small" style="margin-top:18px">
+      Last updated: <span id="ts"></span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('ts').textContent = new Date().toISOString();
+  </script>
+</body>
+</html>
